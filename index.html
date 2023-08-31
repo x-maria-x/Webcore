@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>Сервисный центр CPS</title>
   </head>
   <body>
@@ -12,9 +16,7 @@
       <header class="header">
         <div class="header__wrapper">
           <div class="header__menu">
-            <button
-              class="header__menu-open button-menu-open header__btn-burger header__btn"
-            ></button>
+            <button class="header__btn-burger header__btn"></button>
             <div class="logo__img">
               <a href="#" class="header__logo">
                 <img src="img/Group.svg" alt="logo" />
@@ -44,6 +46,57 @@
           </div>
         </div>
       </header>
+
+      <section class="sidebar">
+        <div class="sidebar__header">
+          <button class="sidebar__btn-close header__btn"></button>
+          <div class="logo__img">
+            <a href="#" class="sidebar__logo">
+              <img src="img/Group.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="sidebar__btn-search header__btn"></div>
+        </div>
+        <div class="sidebar__content">
+          <nav class="sidebar__nav">
+            <li class="sidebar__item">Ремонт техники</li>
+            <li class="sidebar__item">Услуги и сервисы</li>
+            <li class="sidebar__item">Корпоративным клиентам</li>
+            <li class="sidebar__item">Продавцам техники</li>
+            <li class="sidebar__item">Партнерам</li>
+            <li class="sidebar__item">Производителям</li>
+            <li class="sidebar__item">Наши сервисные центры</li>
+            <li class="sidebar__item">Контакты</li>
+          </nav>
+          <div class="sidebar__information">
+            <div class="sidebar__contact">
+              <ul class="sidebar__nav-contact">
+                <li>
+                  <button class="header__btn header__btn-call"></button>
+                </li>
+                <li>
+                  <button class="header__btn header__btn-chat"></button>
+                </li>
+                <li>
+                  <button class="header__btn header__btn-profile"></button>
+                </li>
+              </ul>
+              <a class="sidebar__mail" href="mailto:mail@cps.com"
+                >mail@cps.com</a
+              >
+              <a class="sidebar__tel" href="tel:8 800 890 8900"
+                >8 800 890 8900</a
+              >
+            </div>
+            <div class="sidebar__lang">
+              <p class="sidebar__lang-item">RU</p>
+              <p class="sidebar__lang-item">EN</p>
+              <p class="sidebar__lang-item">CH</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main class="main">
         <div class="main__wrapper">
           <div class="main__header">
@@ -93,7 +146,7 @@
                   рекомендациям и, в свою очередь советуют нас родным и близким.
                 </p>
               </div>
-              <button class="main__description-read-more">Читать далее</button>
+              <button class="main__description-read-more btn-read-more">Читать далее</button>
             </div>
 
             <div class="main__description-image">
@@ -111,9 +164,88 @@
               </picture>
             </div>
           </section>
+          <div class="main__container">
+            <h2 class="main__subtitle">Ремонт техники различных брендов</h2>
+
+            <div class="swiper-container slider-logo">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Lenovo.svg" alt="Lenovo logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Samsung.svg" alt="Samsung logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Apple.svg" alt="Apple logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/ViewSonic.svg" alt="ViewSonic logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Bosh.svg" alt="Bosh logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/HP.svg" alt="HP logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Acer.svg" alt="Acer logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Sony.svg" alt="Sony logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Lenovo.svg" alt="Lenovo logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Samsung.svg" alt="Samsung logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slider-logo-item">
+                    <img src="img/Apple.svg" alt="Apple logo" />
+                    <button class="header__btn swiper__btn-next"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+            </div>
+              <button class="swiper-read-more btn-read-more">Показать еще</button>
+
+          </div>
         </div>
       </main>
-      <footer></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
