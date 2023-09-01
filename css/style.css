@@ -585,6 +585,12 @@ a {
   gap: 10px;
 }
 
+.lang-item-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 .sidebar__lang-item {
   color: #1b1c21;
   font-family: "TTLakes Medium";
@@ -597,6 +603,9 @@ a {
 
 .sidebar__lang-item:hover {
   color: #7e7e82;
+}
+.sidebar__lang label:has(input:checked) {
+  color: #41F6D7;
 }
 
 .main__container {
