@@ -370,9 +370,6 @@ a {
 
 .main__description-list {
   margin: 0 16px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 
 @media (min-width: 768px) {
@@ -491,33 +488,6 @@ a {
   }
 }
 
-/* .sidebar {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 320px;
-  height: 100vh;
-  background-color: #fff;
-  z-index: 99;
-  box-shadow: 5px 0 40px 0 #7e7e82;
-  padding: 19px 0;
-  overflow-y: auto;
-} */
-
-/* @media (min-width: 1440px) {
-  .sidebar {
-    display: block;
-    position: fixed;
-  }
-  .container {
-    display: flex;
-  }
-} */
-
-/* .sidebar_show {
-  display: block;
-} */
 
 .sidebar__header {
   margin: 0 24px 50px 24px;
@@ -735,9 +705,6 @@ a {
   }
   .slider-logo {
     margin: 24px;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 725px; */
     height: 160px;
     overflow-y: hidden;
   }
@@ -745,9 +712,6 @@ a {
     display: none;
   }
   .swiper-logo-read-more {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 735px; */
     margin-left: 24px;
     display: block;
     text-align: start;
@@ -755,15 +719,7 @@ a {
   }
 }
 @media (min-width: 1016px) {
-  /* .slider-logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 968px;
-  } */
   .swiper-logo-read-more {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 968px; */
     display: block;
     text-align: start;
   }
@@ -775,17 +731,12 @@ a {
   }
   .slider-logo {
     margin: 24px 32px;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1056px; */
   }
   .swiper-wrapper {
     gap: 16px 32px;
   }
   .swiper-logo-read-more {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1056px; */
+ 
     display: block;
     text-align: start;
     margin-bottom: 50px;
@@ -816,7 +767,6 @@ a {
   }
 }
 
-/* Ремонт различных видов техники */
 
 .slider-type-item {
   display: flex;
@@ -865,7 +815,7 @@ a {
   align-self: flex-start;
   color: #1b1c21;
   font-family: "TTLakes Medium";
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
   letter-spacing: -0.2px;
 }
 
@@ -877,16 +827,10 @@ a {
   }
   .slider-type {
     margin: 24px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* width: 725px; */
     height: 160px;
     overflow-y: hidden;
   }
   .swiper-type-read-more {
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* width: 735px; */
     display: block;
     text-align: start;
     margin-bottom: 32px;
@@ -897,15 +841,8 @@ a {
   }
 }
 @media (min-width: 1016px) {
-  /* .slider-type {
-    margin-left: auto;
-    margin-right: auto;
-    width: 968px;
-  } */
   .swiper-type-read-more {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 968px; */
+
     display: block;
     text-align: start;
   }
@@ -917,15 +854,9 @@ a {
   }
   .slider-type {
     margin: 24px 32px;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1056px; */
   }
 
   .swiper-type-read-more {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1056px; */
     display: block;
     text-align: start;
     margin-bottom: 50px;
@@ -938,7 +869,7 @@ a {
   height: auto;
 }
 
-/* Цены */
+
 
 .slider-price-item {
   display: flex;
@@ -1027,11 +958,6 @@ a {
 
   .slider-price {
     margin: 24px;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 725px; */
-    /* height: 160px; */
-    /* overflow-y: hidden; */
   }
   .swiper-slide-price {
     margin: 0;
@@ -1073,29 +999,18 @@ a {
     display: none;
   }
 
-  /* .slider-price-item:nth-of-type(1) {
-    border-radius: 6px 6px 0 0;
-  } */
-  /* .slider-price-item {
-    border-radius: 0 0 6px 6px ;
-  } */
 }
 
 @media (min-width: 1440px) {
   .slider-price {
     margin: 16px 32px;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1056px; */
   }
 }
 
 .main__text {
   color: #1b1c21;
-
   font-size: 14px;
-
-  line-height: 20px; /* 142.857% */
+  line-height: 20px; 
   letter-spacing: 0.2px;
   margin-left: 16px;
   margin-bottom: 16px;
@@ -1115,7 +1030,6 @@ a {
 .main__get-offer-link::after {
   content: "";
   background-image: url("../img/more.svg");
-  /* background-color: #1b1c21; */
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -1160,9 +1074,6 @@ a {
     display: flex;
     flex-direction: row;
     margin: 24px;
-    /* align-items: center; */
-    /* gap: 16px; */
-    /* text-align: center; */
     flex: 3;
   }
   .footer-item {
@@ -1190,7 +1101,7 @@ a {
   border-bottom: 1px solid #d9fff5;
   position: absolute;
   top: -16px;
-  /* left: 16px; */
+
 }
 
 @media (min-width: 1440px) {
