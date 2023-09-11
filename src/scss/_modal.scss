@@ -1,0 +1,110 @@
+$color_text : #1b1c21;
+$color_text-gray: #7e7e82;
+$color_white: #fff;
+$font-family: "TTLakes", sans-serif;
+$font-family_Medium: "TTLakes Medium";
+$font-family_Bold: "TTLakes Bold";
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: $color_white;
+  padding: 24px 16px 0 16px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease 0s;
+  box-shadow: 5px 0 40px 0 $color_text-gray;
+
+  @media (min-width: 360px) {
+    padding: 24px 24px 0 24px;
+    width: 320px;
+  }
+
+  &_active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &-call--close {
+    background: url("../img/burger-close.svg") no-repeat;
+    
+    @media (min-width: 400px) {
+      position: absolute;
+      top: 32;
+      left: -56px;
+    }
+  }
+
+  &-title {
+    margin-top: 40px;
+    font-family: $font-family_Bold;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: $color_text;
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 40px;
+      width: 4px;
+      left: 0px;
+      top: 0;
+      border-radius: 0px 10px 10px 0;
+      background: url(../img/highlight.svg) no-repeat center;
+      margin-left: -24px;
+    }
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 12px 16px;
+  }
+
+  &-text {
+    color: $color_text-gray;
+    font-family: $font-family_Medium;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &-call__btn {
+    background: url("../img/submit.svg") no-repeat center;
+  }
+
+  &-feedback--close {
+    background: url("../img/burger-close.svg") no-repeat;
+
+    @media (min-width: 400px) {
+      position: absolute;
+      top: 32;
+      left: -56px;
+    }
+  }
+
+  &-feedback__text {
+    height: 120px;
+  }
+
+}
+
+.read-more_show {
+  overflow: visible;
+  max-height: 1%;
+  height: auto;
+}

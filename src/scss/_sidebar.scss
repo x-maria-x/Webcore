@@ -1,0 +1,159 @@
+$color_text : #1b1c21;
+$color_text-gray: #7e7e82;
+$color_white: #fff;
+$font-family: "TTLakes", sans-serif;
+$font-family_Medium: "TTLakes Medium";
+$font-family_Bold: "TTLakes Bold";
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: $color_white;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease 0s;
+  box-shadow: 5px 0 40px 0 $color_text-gray;
+  padding: 19px 0;
+
+  @media (min-width: 360px) {
+    width: 320px;
+  }
+  @media (min-width: 1440px) {
+      transform: translateX(0);
+      opacity: 1;
+      left: auto;
+  }
+  
+  &__header {
+    margin: 0 24px 50px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn-close {
+    background-image: url("../img/burger-close.svg");
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__btn-search {
+    background-image: url("../img/search.svg");
+    margin-left: 60px;
+  }
+  &__content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 95%;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  &__item {
+    color: $color_text;
+    font-family: $font-family_Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    margin-left: 24px;
+
+    &:hover {
+      color: $color_text-gray;
+      margin-left: 0;
+      padding: 0;
+
+      &::before {
+        content: "";
+        background: url("../img/highlight-sidebar.svg") no-repeat center;
+        width: 4px;
+        height: 32px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+        padding: 0;
+      }
+    }
+  }
+
+  &__information {
+    margin-left: 24px;
+    height: 188px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__nav-contact {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &__mail {
+    display: block;
+    color: $color_text;
+    font-family: $font-family_Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+  &__tel {
+    display: block;
+    color: $color_text;
+    font-family: $font-family_Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+  &__lang {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__lang-item {
+    color: $color_text;
+    font-family: $font-family_Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    &:hover {
+      color: $color_text-gray;
+    }
+  }
+
+
+  &__lang {
+    label:has(input:checked) {
+    color: #41f6d7;
+  }
+  }
+}
+
+.lang-item-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+

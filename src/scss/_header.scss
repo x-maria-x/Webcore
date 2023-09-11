@@ -1,0 +1,117 @@
+$color_white: #fff;
+$color_pink : #ff3e79;
+$color_gray : #eaeaea;
+
+.header {
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        gap: 16px;
+        background-color: $color_white;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            gap: 20px;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &::before {
+            @media (min-width: 768px) {
+                content: "";
+                display: inline-block;
+                background: $color_gray;
+                border-radius: 1px;
+                width: 2px;
+                height: 28px;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        list-style-type: none;
+        gap: 20px;
+        align-items: center;
+
+        li {
+            height: 40px; 
+        } 
+    }
+}
+
+
+
+.nav-contact {
+  display: none;
+  gap: 16px;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+
+
+.nav-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: $color_gray;
+    border-radius: 1px;
+    width: 2px;
+    height: 28px;
+  }
+}
+
+
+.round-button {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+
+  &:hover {
+    box-shadow: 0 0 5px $color_pink;
+  }
+
+  &_burger {
+    background-image: url("../img/burger.svg");
+  }
+  &_call {
+    background-image: url("../img/call.svg");
+  }
+  &_chat {
+    background-image: url("../img/chat.svg");
+  }
+  &_profile {
+    background-image: url("../img/profile.svg");
+  }
+  &_repair {
+    background-image: url("../img/repair.svg");
+  }
+  &_checkstatus {
+    background-image: url("../img/checkstatus.svg");
+  }
+}
