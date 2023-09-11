@@ -1,15 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: "TTLakes";
-  src: local("TT Lakes Regular"),
-    url("../fonts/TTLakes-Regular.woff") format("woff");
+  src: local("TT Lakes Regular"), url("../fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TTLakes Medium";
-  src: local("TT Lakes Medium"),
-    url("../fonts/TTLakes-Medium.woff") format("woff");
+  src: local("TT Lakes Medium"), url("../fonts/TTLakes-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -316,13 +314,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(248, 248, 248) 0%,
-    rgba(0, 0, 0, 0) 2%,
-    rgba(0, 0, 0, 0) 98%,
-    rgb(248, 248, 248) 100%
-  );
+  background: linear-gradient(to right, rgb(248, 248, 248) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0) 98%, rgb(248, 248, 248) 100%);
 }
 @media (min-width: 1120px) {
   .main__nav-list::after {
@@ -700,21 +692,20 @@ a {
     margin: 24px 32px;
   }
 }
-@media (max-width: 767px) {
+.slider-logo::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  z-index: 90;
+  height: 72px;
+  top: 0;
+  left: -16px;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(248, 248, 248) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgb(248, 248, 248) 100%);
+}
+@media (min-width: 768px) {
   .slider-logo::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    z-index: 90;
-    height: 72px;
-    top: 0;
-    right: -16px;
-    width: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0) 90%,
-      rgb(248, 248, 248) 100%
-    );
+    display: none;
   }
 }
 .slider-logo-item {
@@ -751,12 +742,14 @@ a {
   z-index: 90;
   height: 160px;
   top: 0;
-  right: -16px;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 90%,
-    rgb(255, 255, 255) 100%
-  );
+  left: -16px;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(248, 248, 248) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgb(248, 248, 248) 100%);
+}
+@media (min-width: 768px) {
+  .slider-type::after {
+    display: none;
+  }
 }
 .slider-type-item {
   display: flex;
@@ -797,13 +790,9 @@ a {
   z-index: 90;
   height: 200px;
   top: 0;
-  right: -16px;
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 90%,
-    rgb(255, 255, 255) 100%
-  );
+  left: -16px;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgb(255, 255, 255) 100%);
 }
 @media (min-width: 768px) {
   .slider-price::after {

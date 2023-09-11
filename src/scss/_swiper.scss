@@ -167,21 +167,26 @@ $background-color: #f8f8f8;
         }
 
         &::after {
-            @media (max-width: 767px) {
-                pointer-events: none;
-                content: "";
-                position: absolute;
-                z-index: 90;
-                height: 72px;
-                top: 0;
-                right: -16px;
-                width: 100%;
-                background: linear-gradient(
-                  to right,
-                  rgba(0, 0, 0, 0) 90%,
-                  rgb(248, 248, 248) 100%
-                ); 
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            z-index: 90;
+            height: 72px;
+            top: 0;
+            left: -16px;
+            width: 100vw;
+            background: linear-gradient(
+                to right,
+                rgb(248, 248, 248) 0%,
+                rgba(0, 0, 0, 0) 10%,
+                rgba(0, 0, 0, 0) 90%,
+                rgb(248, 248, 248) 100%
+            ); 
+
+            @media (min-width: 768px) {
+                display: none;
             }
+            
         }
     }
 
@@ -218,12 +223,20 @@ $background-color: #f8f8f8;
             z-index: 90;
             height: 160px;
             top: 0;
-            right: -16px;
+            left: -16px;
+            width: 100vw;
             background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0) 90%,
-            rgb(255, 255, 255) 100%
+            rgb(248, 248, 248) 0%,
+                rgba(0, 0, 0, 0) 10%,
+                rgba(0, 0, 0, 0) 90%,
+                rgb(248, 248, 248) 100%
             );
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+            
         }
 
         
@@ -268,10 +281,12 @@ $background-color: #f8f8f8;
             z-index: 90;
             height: 200px;
             top: 0;
-            right: -16px;
-            width: 100%;
+            left: -16px;
+            width: 100vw;
             background: linear-gradient(
             to right,
+            rgb(255, 255, 255) 0%,
+            rgba(0, 0, 0, 0) 10%,
             rgba(0, 0, 0, 0) 90%,
             rgb(255, 255, 255) 100%
             );
